@@ -17,6 +17,7 @@
 
 - (void)loadView {
     self.view = [UIView new];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     label = [UILabel new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
