@@ -1,0 +1,44 @@
+//
+//  QuizViewController.m
+//  MovieQuizSE
+//
+//  Created by Roman Yaschenkov on 28.04.2026.
+//
+
+#import "QuizViewController.h"
+
+@interface QuizViewController ()
+
+@end
+
+@implementation QuizViewController {
+    UILabel *label;
+}
+
+- (void)loadView {
+    self.view = [UIView new];
+    
+    label = [UILabel new];
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    label.font = [UIFont systemFontOfSize:20.0];
+    label.text = @"Hello Quiz Preview";
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    const CGSize size = self.view.bounds.size;
+    
+    [label sizeToFit];
+    label.frame = CGRectInset(label.frame, -10, -10);
+    label.center = CGPointMake(size.width * 0.5, size.height * 0.5);
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+@end
