@@ -10,7 +10,7 @@
 @implementation UIFont (YSDisplay)
 
 + (UIFont *)ysMedium20 {
-    return [UIFont fontWithName:@"YSDisplay-Medium" size:23.0];
+    return [UIFont fontWithName:@"YSDisplay-Medium" size:20.0];
 }
 
 + (UIFont *)ysBold23 {
