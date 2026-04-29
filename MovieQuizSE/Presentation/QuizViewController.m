@@ -13,7 +13,7 @@
 
 @end
 
-@implementation QuizViewController {
+@implementation QuizViewController { 
     UILabel *label;
 }
 
@@ -24,7 +24,7 @@
     label = [UILabel new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
     label.font = [UIFont ysBold23];
-    label.text = @"Hello Quiz Preview";
+    label.text = NSLocalizedString(@"Question", "");
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9462D8212FA221A8001DB3CF /* UIColor+YPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9462D8202FA221A8001DB3CF /* UIColor+YPColor.m */; };
+		9462D8232FA22F1A001DB3CF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9462D8222FA22F1A001DB3CF /* Localizable.xcstrings */; };
 		946E85392FA1F67300007A4E /* UIFont+YSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E85382FA1F67300007A4E /* UIFont+YSDisplay.m */; };
 		94733C652FA0CD230072B96B /* MovieQuizSETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C632FA0CD230072B96B /* MovieQuizSETests.m */; };
 		94733C782FA0CD600072B96B /* MovieQuizSEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C752FA0CD600072B96B /* MovieQuizSEUITests.m */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		9462D81F2FA221A8001DB3CF /* UIColor+YPColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YPColor.h"; sourceTree = "<group>"; };
 		9462D8202FA221A8001DB3CF /* UIColor+YPColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YPColor.m"; sourceTree = "<group>"; };
+		9462D8222FA22F1A001DB3CF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		946E85372FA1F67300007A4E /* UIFont+YSDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+YSDisplay.h"; sourceTree = "<group>"; };
 		946E85382FA1F67300007A4E /* UIFont+YSDisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YSDisplay.m"; sourceTree = "<group>"; };
 		94733C5A2FA0CD1A0072B96B /* MovieQuizSETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizSETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +197,7 @@
 				947AAE202FA1E57800444AB6 /* Fonts */,
 				94CE9DC02F9F91C10057FA3D /* Info.plist */,
 				94CE9DBF2F9F91C10057FA3D /* Assets.xcassets */,
+				9462D8222FA22F1A001DB3CF /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 94CE9D972F9F915D0057FA3D;
 			minimizedProjectReferenceProxies = 1;
@@ -371,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				947AAE212FA1E57800444AB6 /* YSDisplay-Bold.ttf in Resources */,
+				9462D8232FA22F1A001DB3CF /* Localizable.xcstrings in Resources */,
 				947AAE222FA1E57800444AB6 /* YSDisplay-Medium.ttf in Resources */,
 				94CE9DCF2F9F91C10057FA3D /* Assets.xcassets in Resources */,
 				94CE9DD12F9F91C10057FA3D /* LaunchScreen.storyboard in Resources */,
@@ -626,6 +631,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
 		};
@@ -680,6 +686,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
