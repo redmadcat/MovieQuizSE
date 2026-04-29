@@ -21,7 +21,7 @@
     
     label = [UILabel new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
-    label.font = [UIFont systemFontOfSize:20.0];
+    label.font = [UIFont fontWithName:@"YSDisplay-Bold" size:20.0];
     label.text = @"Hello Quiz Preview";
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];

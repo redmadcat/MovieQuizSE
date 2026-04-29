@@ -11,6 +11,8 @@
 		94733C782FA0CD600072B96B /* MovieQuizSEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C752FA0CD600072B96B /* MovieQuizSEUITests.m */; };
 		94733C792FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C762FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m */; };
 		94733C7C2FA0CE280072B96B /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C7B2FA0CE280072B96B /* QuizViewController.m */; };
+		947AAE212FA1E57800444AB6 /* YSDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947AAE1D2FA1E57800444AB6 /* YSDisplay-Bold.ttf */; };
+		947AAE222FA1E57800444AB6 /* YSDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947AAE1E2FA1E57800444AB6 /* YSDisplay-Medium.ttf */; };
 		94CE9DCB2F9F91C10057FA3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DBE2F9F91C10057FA3D /* AppDelegate.m */; };
 		94CE9DCC2F9F91C10057FA3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DC32F9F91C10057FA3D /* main.m */; };
 		94CE9DCD2F9F91C10057FA3D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DC72F9F91C10057FA3D /* SceneDelegate.m */; };
@@ -45,6 +47,8 @@
 		94733C762FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieQuizSEUITestsLaunchTests.m; sourceTree = "<group>"; };
 		94733C7A2FA0CE280072B96B /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		94733C7B2FA0CE280072B96B /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		947AAE1D2FA1E57800444AB6 /* YSDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		947AAE1E2FA1E57800444AB6 /* YSDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		94CE9DA02F9F915E0057FA3D /* MovieQuizSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuizSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CE9DBD2F9F91C10057FA3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		94CE9DBE2F9F91C10057FA3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +113,23 @@
 			path = MovieQuizSEUITests;
 			sourceTree = "<group>";
 		};
+		947AAE1F2FA1E57800444AB6 /* YSDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				947AAE1D2FA1E57800444AB6 /* YSDisplay-Bold.ttf */,
+				947AAE1E2FA1E57800444AB6 /* YSDisplay-Medium.ttf */,
+			);
+			path = YSDisplay;
+			sourceTree = "<group>";
+		};
+		947AAE202FA1E57800444AB6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				947AAE1F2FA1E57800444AB6 /* YSDisplay */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		94CE9D972F9F915D0057FA3D = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +168,7 @@
 		94CE9DD32F9F91FA0057FA3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				947AAE202FA1E57800444AB6 /* Fonts */,
 				94CE9DC02F9F91C10057FA3D /* Info.plist */,
 				94CE9DBF2F9F91C10057FA3D /* Assets.xcassets */,
 			);
@@ -322,6 +344,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947AAE212FA1E57800444AB6 /* YSDisplay-Bold.ttf in Resources */,
+				947AAE222FA1E57800444AB6 /* YSDisplay-Medium.ttf in Resources */,
 				94CE9DCF2F9F91C10057FA3D /* Assets.xcassets in Resources */,
 				94CE9DD12F9F91C10057FA3D /* LaunchScreen.storyboard in Resources */,
 			);
