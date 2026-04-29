@@ -6,6 +6,7 @@
 //
 
 #import "QuizViewController.h"
+#import "UIFont+YSDisplay.h"
 
 @interface QuizViewController ()
 
@@ -21,7 +22,7 @@
     
     label = [UILabel new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
-    label.font = [UIFont fontWithName:@"YSDisplay-Bold" size:20.0];
+    label.font = [UIFont ysBold23];
     label.text = @"Hello Quiz Preview";
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];

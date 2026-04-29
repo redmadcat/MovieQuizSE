@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		946E85392FA1F67300007A4E /* UIFont+YSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E85382FA1F67300007A4E /* UIFont+YSDisplay.m */; };
 		94733C652FA0CD230072B96B /* MovieQuizSETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C632FA0CD230072B96B /* MovieQuizSETests.m */; };
 		94733C782FA0CD600072B96B /* MovieQuizSEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C752FA0CD600072B96B /* MovieQuizSEUITests.m */; };
 		94733C792FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C762FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		946E85372FA1F67300007A4E /* UIFont+YSDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+YSDisplay.h"; sourceTree = "<group>"; };
+		946E85382FA1F67300007A4E /* UIFont+YSDisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YSDisplay.m"; sourceTree = "<group>"; };
 		94733C5A2FA0CD1A0072B96B /* MovieQuizSETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizSETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94733C632FA0CD230072B96B /* MovieQuizSETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieQuizSETests.m; sourceTree = "<group>"; };
 		94733C6A2FA0CD540072B96B /* MovieQuizSEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizSEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +97,15 @@
 				94CE9DDA2F9F9A710057FA3D /* MovieQuizSE-Bridging-Header.h */,
 			);
 			path = Interop;
+			sourceTree = "<group>";
+		};
+		946E85352FA1F3CD00007A4E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				946E85372FA1F67300007A4E /* UIFont+YSDisplay.h */,
+				946E85382FA1F67300007A4E /* UIFont+YSDisplay.m */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		94733C642FA0CD230072B96B /* MovieQuizSETests */ = {
@@ -206,6 +218,7 @@
 		94CE9DD72F9F99590057FA3D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				946E85352FA1F3CD00007A4E /* Fonts */,
 				94CE9DD82F9F9A510057FA3D /* UIViewController+Preview.swift */,
 			);
 			path = Extensions;
@@ -377,6 +390,7 @@
 			files = (
 				94733C7C2FA0CE280072B96B /* QuizViewController.m in Sources */,
 				94CE9DCB2F9F91C10057FA3D /* AppDelegate.m in Sources */,
+				946E85392FA1F67300007A4E /* UIFont+YSDisplay.m in Sources */,
 				94CE9DCC2F9F91C10057FA3D /* main.m in Sources */,
 				94CE9DDD2F9F9BC90057FA3D /* QuizViewControllerPreview.swift in Sources */,
 				94CE9DD92F9F9A650057FA3D /* UIViewController+Preview.swift in Sources */,
