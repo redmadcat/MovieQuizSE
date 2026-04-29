@@ -7,6 +7,7 @@
 
 #import "QuizViewController.h"
 #import "UIFont+YSDisplay.h"
+#import "UIColor+YPColor.h"
 
 @interface QuizViewController ()
 
@@ -18,7 +19,7 @@
 
 - (void)loadView {
     self.view = [UIView new];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor ypWhite];
     
     label = [UILabel new];
     label.translatesAutoresizingMaskIntoConstraints = NO;
