@@ -60,6 +60,7 @@
     posterImageView = [UIImageView new];
     posterImageView.backgroundColor = [UIColor blueColor];
     posterImageView.translatesAutoresizingMaskIntoConstraints = NO;
+    posterImageView.layer.cornerRadius = 20;
        
     UIStackView *parentStackView = [UIStackView new];
     parentStackView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -112,7 +113,11 @@
 }
 
 - (void)buttonPressed:(UIButton *)button {
-    NSLog(@"Button fired!");
+    BOOL isCorrect = arc4random_uniform(2) == 1;
+    BOOL show = button.titleLabel.text == NSLocalizedString(@"AnswerYes", "") ? YES : NO;
+    posterImageView.layer.masksToBounds = YES;
+    posterImageView.layer.borderColor = isCorrect ? [UIColor ypGreen].CGColor : [UIColor ypRed].CGColor;
+    posterImageView.layer.borderWidth = show ? 8 : 0;
 }
 
 @end
