@@ -35,9 +35,15 @@
         }
       }
     },
-    "Question" : {
+    "QuestionHeaderTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Question"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
