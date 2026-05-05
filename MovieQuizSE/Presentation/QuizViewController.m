@@ -43,7 +43,7 @@
     questionRatingLabel = [UILabel new];
     questionRatingLabel.translatesAutoresizingMaskIntoConstraints = NO;
     questionRatingLabel.font = [UIFont ysMedium20];
-    questionRatingLabel.text =  [NSLocalizedString(@"QuestionRatingTitle", "") stringByAppendingString:@" 8?"];
+    questionRatingLabel.text = [NSLocalizedString(@"QuestionRatingTitle", "") stringByAppendingString:@" 8?"];
     questionRatingLabel.textColor = [UIColor ypWhite];
     questionRatingLabel.textAlignment = NSTextAlignmentCenter;
     
