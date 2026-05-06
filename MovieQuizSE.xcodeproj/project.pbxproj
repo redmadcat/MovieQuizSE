@@ -96,13 +96,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9462D81E2FA22170001DB3CF /* Colors */ = {
+		9462D81E2FA22170001DB3CF /* Color */ = {
 			isa = PBXGroup;
 			children = (
 				9462D81F2FA221A8001DB3CF /* UIColor+YPColor.h */,
 				9462D8202FA221A8001DB3CF /* UIColor+YPColor.m */,
 			);
-			path = Colors;
+			path = Color;
 			sourceTree = "<group>";
 		};
 		9469A59F2FA088DA00D1A906 /* Interop */ = {
@@ -113,13 +113,13 @@
 			path = Interop;
 			sourceTree = "<group>";
 		};
-		946E85352FA1F3CD00007A4E /* Fonts */ = {
+		946E85352FA1F3CD00007A4E /* Font */ = {
 			isa = PBXGroup;
 			children = (
 				946E85372FA1F67300007A4E /* UIFont+YSDisplay.h */,
 				946E85382FA1F67300007A4E /* UIFont+YSDisplay.m */,
 			);
-			path = Fonts;
+			path = Font;
 			sourceTree = "<group>";
 		};
 		94733C642FA0CD230072B96B /* MovieQuizSETests */ = {
@@ -233,8 +233,8 @@
 		94CE9DD72F9F99590057FA3D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9462D81E2FA22170001DB3CF /* Colors */,
-				946E85352FA1F3CD00007A4E /* Fonts */,
+				9462D81E2FA22170001DB3CF /* Color */,
+				946E85352FA1F3CD00007A4E /* Font */,
 				94CE9DD82F9F9A510057FA3D /* UIViewController+Preview.swift */,
 			);
 			path = Extensions;
