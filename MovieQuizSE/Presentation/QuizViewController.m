@@ -98,15 +98,14 @@
     [footerStackView addArrangedSubview:rejectButton];
     [footerStackView setLayoutMarginsRelativeArrangement:YES];
     [footerStackView setLayoutMargins:UIEdgeInsetsMake(0, 0, 10, 0)];
-    
-    UILayoutGuide *guide = self.view.layoutMarginsGuide;
-    
+            
     [parentStackView addArrangedSubview:headerStackView];
     [parentStackView addArrangedSubview:posterImageView];
     [parentStackView addArrangedSubview:questionRatingLabel];
     [parentStackView addArrangedSubview:footerStackView];
     [self.view addSubview:parentStackView];
                 
+    UILayoutGuide *guide = self.view.layoutMarginsGuide;
     [posterImageView.heightAnchor constraintEqualToAnchor:posterImageView.widthAnchor multiplier:3.0/2.0].active = YES;
     [footerStackView.heightAnchor constraintEqualToConstant:60].active = YES;
     [parentStackView.leadingAnchor constraintEqualToAnchor:guide.leadingAnchor].active = YES;
