@@ -8,6 +8,7 @@
 #import "YPQuizViewController.h"
 #import "UIFont+YSDisplay.h"
 #import "UIColor+YPColor.h"
+#import "UILabel+Factory.h"
 
 @interface YPQuizViewController ()
 
@@ -26,27 +27,12 @@
     self.view = [UIView new];
     self.view.backgroundColor = [UIColor ypBlack];
     
-    questionHeaderLabel = [UILabel new];
-    questionHeaderLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    questionHeaderLabel.font = [UIFont ysMedium20];
-    questionHeaderLabel.text = NSLocalizedString(@"QuestionHeaderTitle", "");
-    questionHeaderLabel.textColor = [UIColor ypWhite];
-    questionHeaderLabel.textAlignment = NSTextAlignmentLeft;
-    
-    questionCounterLabel = [UILabel new];
-    questionCounterLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    questionCounterLabel.font = [UIFont ysMedium20];
-    questionCounterLabel.text = @"1/10";
-    questionCounterLabel.textColor = [UIColor ypWhite];
-    questionCounterLabel.textAlignment = NSTextAlignmentRight;
-    
-    questionRatingLabel = [UILabel new];
-    questionRatingLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    questionRatingLabel.font = [UIFont ysMedium20];
-    questionRatingLabel.text = [NSLocalizedString(@"QuestionRatingTitle", "") stringByAppendingString:@" 8?"];
-    questionRatingLabel.textColor = [UIColor ypWhite];
-    questionRatingLabel.textAlignment = NSTextAlignmentCenter;
-    
+    questionHeaderLabel = [UILabel createWith:@"QuestionHeaderTitle"];
+    questionRatingLabel = [UILabel createWith:@"QuestionRatingTitle" textPostfix:@" 8?"
+                                textAlignment:NSTextAlignmentCenter];
+    questionCounterLabel = [UILabel createWith:@"1/10"
+                                 textAlignment:NSTextAlignmentRight];
+                    
     acceptButton = [UIButton buttonWithType:UIButtonTypeSystem];
     acceptButton.translatesAutoresizingMaskIntoConstraints = NO;
     acceptButton.layer.cornerRadius = 15;
