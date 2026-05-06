@@ -24,6 +24,7 @@
 		94CE9DD92F9F9A650057FA3D /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DD82F9F9A510057FA3D /* UIViewController+Preview.swift */; };
 		94CE9DDD2F9F9BC90057FA3D /* QuizViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DDC2F9F9BC10057FA3D /* QuizViewControllerPreview.swift */; };
 		94FC4B602FAB21C80035C2A8 /* UILabel+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC4B5F2FAB21C80035C2A8 /* UILabel+Factory.m */; };
+		94FC4B642FAB33750035C2A8 /* UIButton+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC4B632FAB33750035C2A8 /* UIButton+Factory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		94CE9DDC2F9F9BC10057FA3D /* QuizViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewControllerPreview.swift; sourceTree = "<group>"; };
 		94FC4B5E2FAB21C80035C2A8 /* UILabel+Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Factory.h"; sourceTree = "<group>"; };
 		94FC4B5F2FAB21C80035C2A8 /* UILabel+Factory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Factory.m"; sourceTree = "<group>"; };
+		94FC4B622FAB33750035C2A8 /* UIButton+Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Factory.h"; sourceTree = "<group>"; };
+		94FC4B632FAB33750035C2A8 /* UIButton+Factory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Factory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,7 @@
 		94CE9DD72F9F99590057FA3D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				94FC4B612FAB335B0035C2A8 /* Button */,
 				94FC4B5D2FAB218F0035C2A8 /* Label */,
 				9462D81E2FA22170001DB3CF /* Color */,
 				946E85352FA1F3CD00007A4E /* Font */,
@@ -259,6 +263,15 @@
 				94FC4B5F2FAB21C80035C2A8 /* UILabel+Factory.m */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		94FC4B612FAB335B0035C2A8 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				94FC4B622FAB33750035C2A8 /* UIButton+Factory.h */,
+				94FC4B632FAB33750035C2A8 /* UIButton+Factory.m */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +438,7 @@
 				94CE9DCC2F9F91C10057FA3D /* main.m in Sources */,
 				9462D8212FA221A8001DB3CF /* UIColor+YPColor.m in Sources */,
 				94CE9DDD2F9F9BC90057FA3D /* QuizViewControllerPreview.swift in Sources */,
+				94FC4B642FAB33750035C2A8 /* UIButton+Factory.m in Sources */,
 				94CE9DD92F9F9A650057FA3D /* UIViewController+Preview.swift in Sources */,
 				94CE9DCD2F9F91C10057FA3D /* SceneDelegate.m in Sources */,
 				94FC4B602FAB21C80035C2A8 /* UILabel+Factory.m in Sources */,
