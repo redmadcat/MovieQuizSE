@@ -13,7 +13,7 @@
 		94733C652FA0CD230072B96B /* MovieQuizSETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C632FA0CD230072B96B /* MovieQuizSETests.m */; };
 		94733C782FA0CD600072B96B /* MovieQuizSEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C752FA0CD600072B96B /* MovieQuizSEUITests.m */; };
 		94733C792FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C762FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m */; };
-		94733C7C2FA0CE280072B96B /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C7B2FA0CE280072B96B /* QuizViewController.m */; };
+		94733C7C2FA0CE280072B96B /* YPQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94733C7B2FA0CE280072B96B /* YPQuizViewController.m */; };
 		947AAE212FA1E57800444AB6 /* YSDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947AAE1D2FA1E57800444AB6 /* YSDisplay-Bold.ttf */; };
 		947AAE222FA1E57800444AB6 /* YSDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947AAE1E2FA1E57800444AB6 /* YSDisplay-Medium.ttf */; };
 		94CE9DCB2F9F91C10057FA3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DBE2F9F91C10057FA3D /* AppDelegate.m */; };
@@ -53,8 +53,8 @@
 		94733C6A2FA0CD540072B96B /* MovieQuizSEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizSEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94733C752FA0CD600072B96B /* MovieQuizSEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieQuizSEUITests.m; sourceTree = "<group>"; };
 		94733C762FA0CD600072B96B /* MovieQuizSEUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieQuizSEUITestsLaunchTests.m; sourceTree = "<group>"; };
-		94733C7A2FA0CE280072B96B /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
-		94733C7B2FA0CE280072B96B /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		94733C7A2FA0CE280072B96B /* YPQuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPQuizViewController.h; sourceTree = "<group>"; };
+		94733C7B2FA0CE280072B96B /* YPQuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPQuizViewController.m; sourceTree = "<group>"; };
 		947AAE1D2FA1E57800444AB6 /* YSDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		947AAE1E2FA1E57800444AB6 /* YSDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		94CE9DA02F9F915E0057FA3D /* MovieQuizSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuizSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,8 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				94CE9DC22F9F91C10057FA3D /* LaunchScreen.storyboard */,
-				94733C7A2FA0CE280072B96B /* QuizViewController.h */,
-				94733C7B2FA0CE280072B96B /* QuizViewController.m */,
+				94733C7A2FA0CE280072B96B /* YPQuizViewController.h */,
+				94733C7B2FA0CE280072B96B /* YPQuizViewController.m */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94733C7C2FA0CE280072B96B /* QuizViewController.m in Sources */,
+				94733C7C2FA0CE280072B96B /* YPQuizViewController.m in Sources */,
 				94CE9DCB2F9F91C10057FA3D /* AppDelegate.m in Sources */,
 				946E85392FA1F67300007A4E /* UIFont+YSDisplay.m in Sources */,
 				94CE9DCC2F9F91C10057FA3D /* main.m in Sources */,

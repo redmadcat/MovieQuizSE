@@ -1,19 +1,19 @@
 //
-//  QuizViewController.m
+//  YPQuizViewController.m
 //  MovieQuizSE
 //
 //  Created by Roman Yaschenkov on 28.04.2026.
 //
 
-#import "QuizViewController.h"
+#import "YPQuizViewController.h"
 #import "UIFont+YSDisplay.h"
 #import "UIColor+YPColor.h"
 
-@interface QuizViewController ()
+@interface YPQuizViewController ()
 
 @end
 
-@implementation QuizViewController {
+@implementation YPQuizViewController {
     UILabel *questionHeaderLabel;
     UILabel *questionCounterLabel;
     UILabel *questionRatingLabel;

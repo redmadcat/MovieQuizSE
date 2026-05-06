@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "QuizViewController.h"
+#import "YPQuizViewController.h"
 
 @interface SceneDelegate ()
 
@@ -21,7 +21,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     if ([scene isKindOfClass:[UIWindowScene class]]) {
         _window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
-        QuizViewController *rootViewController = [QuizViewController new];
+        YPQuizViewController *rootViewController = [YPQuizViewController new];
         _window.rootViewController = rootViewController;
         [_window makeKeyAndVisible];
     } else {

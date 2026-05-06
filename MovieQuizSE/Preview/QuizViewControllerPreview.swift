@@ -16,7 +16,7 @@ struct QuizViewControllerPreview: PreviewProvider {
     
     static var previews: some View {
         ForEach(devices, id: \.self) { deviceName in
-            QuizViewController().toPreview().previewDevice(PreviewDevice(rawValue: deviceName))
+            YPQuizViewController().toPreview().previewDevice(PreviewDevice(rawValue: deviceName))
             .previewDisplayName(deviceName)
         }
     }

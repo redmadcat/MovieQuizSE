@@ -1,5 +1,5 @@
 //
-//  QuizViewController.h
+//  YPQuizViewController.h
 //  MovieQuizSE
 //
 //  Created by Roman Yaschenkov on 28.04.2026.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QuizViewController : UIViewController
+@interface YPQuizViewController : UIViewController
 
 @end
 
