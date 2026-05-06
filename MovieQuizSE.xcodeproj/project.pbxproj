@@ -23,6 +23,7 @@
 		94CE9DD12F9F91C10057FA3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CE9DC22F9F91C10057FA3D /* LaunchScreen.storyboard */; };
 		94CE9DD92F9F9A650057FA3D /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DD82F9F9A510057FA3D /* UIViewController+Preview.swift */; };
 		94CE9DDD2F9F9BC90057FA3D /* QuizViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE9DDC2F9F9BC10057FA3D /* QuizViewControllerPreview.swift */; };
+		94FC4B602FAB21C80035C2A8 /* UILabel+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC4B5F2FAB21C80035C2A8 /* UILabel+Factory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		94CE9DD82F9F9A510057FA3D /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
 		94CE9DDA2F9F9A710057FA3D /* MovieQuizSE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieQuizSE-Bridging-Header.h"; sourceTree = "<group>"; };
 		94CE9DDC2F9F9BC10057FA3D /* QuizViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewControllerPreview.swift; sourceTree = "<group>"; };
+		94FC4B5E2FAB21C80035C2A8 /* UILabel+Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Factory.h"; sourceTree = "<group>"; };
+		94FC4B5F2FAB21C80035C2A8 /* UILabel+Factory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Factory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,7 @@
 		94CE9DD72F9F99590057FA3D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				94FC4B5D2FAB218F0035C2A8 /* Label */,
 				9462D81E2FA22170001DB3CF /* Color */,
 				946E85352FA1F3CD00007A4E /* Font */,
 				94CE9DD82F9F9A510057FA3D /* UIViewController+Preview.swift */,
@@ -246,6 +250,15 @@
 				94CE9DDC2F9F9BC10057FA3D /* QuizViewControllerPreview.swift */,
 			);
 			path = Preview;
+			sourceTree = "<group>";
+		};
+		94FC4B5D2FAB218F0035C2A8 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				94FC4B5E2FAB21C80035C2A8 /* UILabel+Factory.h */,
+				94FC4B5F2FAB21C80035C2A8 /* UILabel+Factory.m */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +427,7 @@
 				94CE9DDD2F9F9BC90057FA3D /* QuizViewControllerPreview.swift in Sources */,
 				94CE9DD92F9F9A650057FA3D /* UIViewController+Preview.swift in Sources */,
 				94CE9DCD2F9F91C10057FA3D /* SceneDelegate.m in Sources */,
+				94FC4B602FAB21C80035C2A8 /* UILabel+Factory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
