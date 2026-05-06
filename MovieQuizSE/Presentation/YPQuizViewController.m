@@ -9,6 +9,7 @@
 #import "UIFont+YSDisplay.h"
 #import "UIColor+YPColor.h"
 #import "UILabel+Factory.h"
+#import "UIButton+Factory.h"
 
 @interface YPQuizViewController ()
 
@@ -32,25 +33,17 @@
                                 textAlignment:NSTextAlignmentCenter];
     questionCounterLabel = [UILabel createWith:@"1/10"
                                  textAlignment:NSTextAlignmentRight];
-                    
-    acceptButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    acceptButton.translatesAutoresizingMaskIntoConstraints = NO;
-    acceptButton.layer.cornerRadius = 15;
-    acceptButton.titleLabel.font = [UIFont ysMedium20];
-    [acceptButton setBackgroundColor:[UIColor ypWhite]];
-    [acceptButton setTitleColor:[UIColor ypBlack] forState:UIControlStateNormal];
-    [acceptButton setTitle:NSLocalizedString(@"AnswerNo", "") forState:UIControlStateNormal];
-    [acceptButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
-    rejectButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    rejectButton.translatesAutoresizingMaskIntoConstraints = NO;
-    rejectButton.layer.cornerRadius = 15;
-    rejectButton.titleLabel.font = [UIFont ysMedium20];
-    [rejectButton setBackgroundColor:[UIColor ypWhite]];
-    [rejectButton setTitleColor:[UIColor ypBlack] forState:UIControlStateNormal];
-    [rejectButton setTitle:NSLocalizedString(@"AnswerYes", "") forState:UIControlStateNormal];
-    [rejectButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    rejectButton = [UIButton createWithTitle:@"AnswerNo"
+                                      target:self
+                                      action:@selector(buttonPressed:)
+                                      events:UIControlEventTouchUpInside];
     
+    acceptButton = [UIButton createWithTitle:@"AnswerYes"
+                                      target:self
+                                      action:@selector(buttonPressed:)
+                                      events:UIControlEventTouchUpInside];
+                
     posterImageView = [UIImageView new];
     posterImageView.translatesAutoresizingMaskIntoConstraints = NO;
     posterImageView.layer.cornerRadius = 20;
@@ -79,9 +72,9 @@
     [headerStackView addArrangedSubview:questionCounterLabel];
     [headerStackView setLayoutMarginsRelativeArrangement:YES];
     [headerStackView setLayoutMargins:UIEdgeInsetsMake(5, 0, 0, 0)];
-            
-    [footerStackView addArrangedSubview:acceptButton];
+    
     [footerStackView addArrangedSubview:rejectButton];
+    [footerStackView addArrangedSubview:acceptButton];
     [footerStackView setLayoutMarginsRelativeArrangement:YES];
     [footerStackView setLayoutMargins:UIEdgeInsetsMake(0, 0, 10, 0)];
             
