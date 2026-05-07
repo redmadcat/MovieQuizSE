@@ -22,6 +22,7 @@
     UIButton *acceptButton;
     UIButton *rejectButton;
     UIImageView *posterImageView;
+    UIActivityIndicatorView *activityIndicatorView;
 }
 
 - (void)loadView {
@@ -48,6 +49,11 @@
     posterImageView.translatesAutoresizingMaskIntoConstraints = NO;
     posterImageView.layer.cornerRadius = 20;
     posterImageView.backgroundColor = [UIColor blueColor];
+    
+    activityIndicatorView = [UIActivityIndicatorView new];
+    activityIndicatorView.translatesAutoresizingMaskIntoConstraints = NO;
+    activityIndicatorView.transform = CGAffineTransformMakeScale(1.5, 1.5);
+    [activityIndicatorView setHidden:NO];
        
     UIStackView *parentStackView = [UIStackView new];
     parentStackView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -82,10 +88,13 @@
     [parentStackView addArrangedSubview:posterImageView];
     [parentStackView addArrangedSubview:questionRatingLabel];
     [parentStackView addArrangedSubview:footerStackView];
+    [parentStackView addSubview:activityIndicatorView];
     [self.view addSubview:parentStackView];
                 
     UILayoutGuide *guide = self.view.layoutMarginsGuide;
     [posterImageView.heightAnchor constraintEqualToAnchor:posterImageView.widthAnchor multiplier:3.0/2.0].active = YES;
+    [activityIndicatorView.centerXAnchor constraintEqualToAnchor:parentStackView.centerXAnchor].active = YES;
+    [activityIndicatorView.centerYAnchor constraintEqualToAnchor:parentStackView.centerYAnchor].active = YES;
     [footerStackView.heightAnchor constraintEqualToConstant:60].active = YES;
     [parentStackView.leadingAnchor constraintEqualToAnchor:guide.leadingAnchor].active = YES;
     [parentStackView.trailingAnchor constraintEqualToAnchor:guide.trailingAnchor].active = YES;
